@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Survey";
+}
+
+<form method="POST" action="process">
+    <div class="mb-3">
+        <label for="Name">Your Name</label>
+        <input type="text" name="Name" id="Name">
+    </div>
+    <div class="mb-3">
+        <label for="Location">Dojo Location</label>
+        <select name="DojoLocation" id="DojoLocation">
+            <option value="0">San Jose</option>
+            <option value="1">Santiago</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="FavoriteLanguage">Favorite Language</label>
+        <select name="FavoriteLanguage" id="FavoriteLanguage">
+            <option value="0">C#</option>
+            <option value="1">Javascript</option>
+            <option value="2">Python</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="Comment" class="form-label">Comment (Optional)</label>
+        <textarea class="form-control w-auto" name="Comment" id="Comment" cols="50" rows="5" ></textarea>
+    </div>
+    <button class="btn btn-primary">Submit</button>
+</form>
